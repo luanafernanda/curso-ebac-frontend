@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="formulario.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <div>
+
+    <h3>Digite um número em cada campo abaixo:</h3>
+
+    <form id="formulario">
+      <label for="numeroA">Número A: </label>
+      <input type="number" id="numeroA" placeholder="Digite um número" required>
+      <label for="numeroB">Número B: </label>
+      <input type="number" id="numeroB" placeholder="Digite um número" required>
+      <button id="enviarBotao" type="submit" >Enviar</button>
+    </form>
+    
+    <p class="error-msg">O Número B precisa ser maior que o Número A</p>
+    <p id="mensagem"></p>
+
+  </div>
+  <script src="formulario.js"></script>
+</body>
+</html>
