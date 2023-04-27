@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(95, 158, 160);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+}
+
+input {
+  height: 25px;
+  font-size: 18px;
+  padding: 8px; 
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 12px;
+  font-size: 18px;  
+  border-radius: 2px;  
+}
+
+ul {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li.completado {
+  text-decoration: line-through;
+}
+
+button {
+  display: inline;
+}
+
