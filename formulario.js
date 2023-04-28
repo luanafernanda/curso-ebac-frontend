@@ -20,29 +20,19 @@ enviarBotao.addEventListener('click', function(e) {
   e.preventDefault();
   validarFormulario();
 
-  const msgSucesso = `O número ${campoB} é maior que o número ${campoA}`
+  const msgSucesso = `O número ${campoB} é maior que o número ${campoA}.`
+  const msgInvalida = `O número A precisa ser maior que o número B.`
 
   if (formEValido) {
-    //form.submit(); // para enviar o formulário
-    const containerMsgSucesso = document.getElementById('mensagem');
+    const containerMsgSucesso = document.querySelector('#mensagem');
     containerMsgSucesso.innerHTML = msgSucesso;
     containerMsgSucesso.style.display = 'block';
-
-    campoA.value = ''
-    campoB.value = ''
   } else {
     numeroA.style.border = '1px solid red'
-    document.querySelector('.error-msg').style.display = 'block'
+    document.querySelector('#mensagem').style.display = 'block'
+    const containerMsgInvalida = document.querySelector('#mensagem');
+    containerMsgInvalida.innerHTML = msgInvalida;
+    containerMsgInvalida.style.backgroundColor = 'red';
   }
 })
 
-numeroA.addEventListener('keyup', function(e){
-  e.preventDefault();
-  if(formEValido) {
-    numeroA.style.border = '1px solid red'
-    document.querySelector('.error-msg').style.display = 'block'
-  } else { 
-    numeroA.style.border = ''
-    document.querySelector('.error-msg').style.display = 'none'
-  }
-})

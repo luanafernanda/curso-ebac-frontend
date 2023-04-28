@@ -5,12 +5,11 @@
 }
 
 body {
-  background-color: #a977e2;
+  background-color: #ca9ef1;
 }
 
 div {
-  zoom: 1.50;
-  background-color: #decaeb;
+  background-color: #b368e2;
   border: 2px solid black;
   border-radius: 9px; 
   position: absolute;
@@ -34,7 +33,7 @@ label {
   padding: 4px;
 }
 
-#mensagem, .error-msg{ 
+#mensagem { 
   background-color: #27ae60;
   margin: 8px;
   padding: 10px;
@@ -42,24 +41,3 @@ label {
   display: none;
   border-radius: 7px; 
 }
-
-.error-msg{
-  background-color: red;
-}
-
-button {
-  background-color:  #a977e2;
-  color: #fff;
-  border: 1px solid black;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 5px;
-}
-
-button:hover {
-  background-color: #008CBA;
-  color: white;
-  cursor: pointer;
-}
-
